@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login check form</title>
+
+    <h2>Please insert your credentials:</h2>
+    <form>
+        <p>Username:<input id="username"></p>
+        <p>Password:<input id="password"></p>
+
+        <p><button type="button" onclick="getInfo()">Check out user in system</button></p>
+        <p><button type="button" onclick="createUser()">Add new user</button></p>
+        <p><button type="button" onclick="deleteUser()">Delete user</button></p>
+        <p><button type="button" onclick="userMapSize()">Check user map size</button></p>
+        <p><button type="button" onclick="users()">All users list</button></p>
+        <p>New group:<input id="group"></p>
+        <p>
+            <button type="button" onclick="createGroup()">Create group</button>
+            <button type="button" onclick="groupsSize()">Check groups size</button>
+            <button type="button" onclick="addUserToGroup()">Add user to Group</button>
+            <button type="button" onclick="groups()">Display groups</button>
+            <button type="button" onclick="userGroups()">User groups</button>
+            <button type="button" onclick="groupsSize()">Groups Size</button>
+            <button type="button" onclick="removeUserFromGroup()">Delete user from group</button>
+        </p>
+        <p>New right:<input id="right"></p>
+        <button type="button" onclick="createRight()">Create right</button>
+        <button type="button" onclick="rights()">Display rights</button>
+        <button type="button" onclick="addRightToGroup()">Add Right to Group</button>
+        <button type="button" onclick="groupRights()">Group rights</button>
+        <p>User:<input id="userCheck"></p>
+        <p>Right:<input id="userRight"></p>
+        <button type="button" onclick="checkRight()">Check User right</button>
+        <button type="button" onclick="doAll()">Add all and everywhere</button>
+        <button type="button" onclick="deleteRight()">Delete right</button>
+        <button type="button" onclick="login()">Login</button>
+        <button type="button" onclick="loginAs()">Login as User</button>
+        <button type="button" onclick="currentUser()">Current user</button>
+        <button type="button" onclick="logout()">Logout</button>
+        <button type="button" onclick="securityWrapper()">SecurityWrapper</button>
+    </form>
+    <h2></h2>
+
+</head>
+<body>
+<script src="main.js"></script>
+<script src="allHere.js"></script>
+<script src="auth-lib.js"></script>
+<script src="addUserToGroup.js"></script>
+<script src="extraTasks.js"></script>
+</body>
+</html>
